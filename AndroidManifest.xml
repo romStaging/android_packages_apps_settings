@@ -918,7 +918,8 @@
 
         <activity android:name="SetFullBackupPassword"
                 android:theme="@style/Theme.DialogWhenLarge"
-                android:exported="false">
+                android:exported="false"
+                android:parentActivityName="Settings$DevelopmentSettingsActivity">
         </activity>
 
         <activity android:name="CredentialStorage"
