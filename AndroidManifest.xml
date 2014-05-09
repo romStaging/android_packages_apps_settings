@@ -1096,7 +1096,8 @@
         </activity>
 
         <activity android:name=".deviceinfo.MiscFilesHandler"
-                android:theme="@style/Theme.DialogWhenLarge"/>
+                android:theme="@style/Theme.DialogWhenLarge"
+                android:parentActivityName="Settings$StorageSettingsActivity" />
 
         <activity android:name="ApnEditor"
                 android:label="@string/apn_edit">
