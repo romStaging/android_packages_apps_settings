@@ -42,12 +42,30 @@
             android:key="keyguard_enable_widgets"
             android:title="@string/security_enable_widgets_title"/>
 
+        <CheckBoxPreference
+            android:key="lockscreen_maximize_widgets"
+            android:title="@string/security_maximize_widgets_title"
+            android:enabled="false"/>
+
         <PreferenceScreen
             android:fragment="com.android.settings.OwnerInfoSettings"
             android:key="owner_info_settings"
             android:title="@string/owner_info_settings_title"
             android:summary="@string/owner_info_settings_summary"/>
 
+        <!-- <CheckBoxPreference
+            android:key="see_through"
+            android:title="@string/see_through_title"
+            android:summary="@string/see_through_summary" /> -->
+
+        <ListPreference
+            android:key="lockscreen_background_style"
+            android:persistent="false"
+            android:dialogTitle="@string/lockscreen_background_style_title"
+            android:summary="%s"
+            android:title="@string/lockscreen_background_style_title"
+            android:entries="@array/lockscreen_background_entries"
+            android:entryValues="@array/lockscreen_background_values" />
     </PreferenceCategory>
 
 </PreferenceScreen>

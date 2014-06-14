@@ -50,6 +50,13 @@
          android:title="@string/vibrate_when_ringing_title"
          android:persistent="false" />
 
+    <com.android.settings.IncreasingRingPreference
+        android:key="increasing_ring"
+        android:title="@string/increasing_ring_title"
+        android:dialogTitle="@string/increasing_ring_title"
+        android:persistent="false"
+        android:streamType="ring" />
+
     <PreferenceCategory
             android:title="@string/sound_category_system_title"/>
 
@@ -87,6 +94,16 @@
             android:title="@string/emergency_tone_title"
             android:entries="@array/emergency_tone_entries"
             android:entryValues="@array/emergency_tone_values" />
+
+    <!-- Volume Rocker -->
+    <PreferenceCategory
+        android:title="@string/volume_buttons_category"/>
+
+    <CheckBoxPreference
+        android:key="volume_wake_screen"
+        android:title="@string/volume_wake_title"
+        android:summary="@string/volume_wake_summary"
+        android:defaultValue="false" />
 
     <!-- Dock -->
     <PreferenceCategory
